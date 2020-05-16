@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import './index.css'
+import logo from './logo.svg'
+import {Form} from './form'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <>
+      <header className="header">
+        FORM VALIDATION
+        <img src={logo} className="logo" alt="logo" />
+      </header>
+      <main className="main">
+        <h2>Create an account</h2>
+        <Form />
+      </main>
+    </>
   </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  document.getElementById('root'),
+)

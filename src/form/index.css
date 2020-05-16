@@ -1,0 +1,33 @@
+.form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  margin: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.field > label {
+  width: 32%;
+  text-align: end;
+  padding: 0 3px 0 0;
+}
+
+.field > input {
+  width: 60%;
+  padding: 5px;
+}
+
+.field > span {
+  width: 100%;
+  text-align: center;
+}
+
+.actions {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-around;
+}
