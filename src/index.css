@@ -24,6 +24,11 @@ button:active {
   color: black;
 }
 
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .header {
   background-color: #282c34;
   min-height: 10vh;

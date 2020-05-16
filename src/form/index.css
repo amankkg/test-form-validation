@@ -5,14 +5,14 @@
 }
 
 .field {
-  margin: 5px 0;
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .field > label {
   width: 32%;
-  text-align: end;
+  text-align: start;
   padding: 0 3px 0 0;
 }
 
@@ -23,7 +23,13 @@
 
 .field > span {
   width: 100%;
-  text-align: center;
+  text-align: start;
+  margin: 0 0 0 20%;
+  color: red;
+}
+
+.field > span::before {
+  content: '❌ ';
 }
 
 .actions {
